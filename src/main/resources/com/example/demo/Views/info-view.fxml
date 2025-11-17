@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="700" prefWidth="1200" style="-fx-background-color: #191919;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.InfoController">
+    <children>
+        <StackPane maxHeight="63.0" minHeight="63.0" style="-fx-background-color: #2D2D2D; -fx-border-color: transparent transparent #767676 transparent; -fx-border-width: 2;">
+            <children>
+                <Label text="CINEMA" textFill="#8c1d18" StackPane.alignment="CENTER">
+                    <font>
+                        <Font name="Arial Black" size="32.0" />
+                    </font>
+                </Label>
+                <Label onMouseClicked="#openMenu" onMouseEntered="#hand" onMouseExited="#mouse" text="⬅" textFill="#8c1d18" StackPane.alignment="CENTER_LEFT">
+                    <font>
+                        <Font size="32.0" />
+                    </font>
+                    <StackPane.margin>
+                        <Insets left="5.0" />
+                    </StackPane.margin>
+                </Label>
+            </children>
+        </StackPane>
+          <VBox spacing="20.0" VBox.vgrow="ALWAYS">
+              <children>
+                  <Label text="Σχετικά με την Εφαρμογή:" textFill="#8c1d18">
+                      <font>
+                          <Font name="Arial Black" size="28.0" />
+                      </font>
+                  </Label>
+                  <Label text="Καλώς ήρθατε!" textFill="WHITE" wrapText="true">
+                      <font>
+                          <Font size="16.0" />
+                      </font>
+                  </Label>
+                  <Label text="Η εφαρμογή Cinema είναι μια σύγχρονη πλατφόρμα για την κράτηση εισιτηρίων κινηματογράφου. Με απλό και φιλικό περιβάλλον, μπορείτε εύκολα να περιηγηθείτε στις διαθέσιμες ταινίες και να επιλέξετε τις αγαπημένες σας θέσεις." textFill="WHITE" wrapText="true">
+                      <font>
+                          <Font size="16.0" />
+                      </font>
+                  </Label>
+
+                  <Label text="Πώς λειτουργεί:" textFill="#8c1d18">
+                      <font>
+                          <Font name="Arial Black" size="28.0" />
+                      </font>
+                      <VBox.margin>
+                          <Insets />
+                      </VBox.margin>
+                  </Label>
+                  <Label text="1. Συνδεθείτε με το όνομα χρήστη σας" textFill="WHITE" wrapText="true">
+                      <font>
+                          <Font size="16.0" />
+                      </font>
+                  </Label>
+                  <Label text="2. Επιλέξτε μια ταινία από την αρχική σελίδα" textFill="WHITE" wrapText="true">
+                      <font>
+                          <Font size="16.0" />
+                      </font>
+                  </Label>
+                  <Label text="3. Επιλέξτε τις θέσεις που επιθυμείτε (λευκές θέσεις είναι διαθέσιμες)" textFill="WHITE" wrapText="true">
+                      <font>
+                          <Font size="16.0" />
+                      </font>
+                  </Label>
+                  <Label text="4. Οι κρατημένες σας θέσεις θα εμφανίζονται με πράσινο χρώμα" textFill="WHITE" wrapText="true">
+                      <font>
+                          <Font size="16.0" />
+                      </font>
+                  </Label>
+            <Label text="5. Μπορείτε να ακυρώσετε μία αγορασμένη θέση, ξαναπατώντας την" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+
+                  <Label text="Απολαύστε την ταινία σας!" textFill="#8c1d18">
+                      <font>
+                          <Font name="Arial Black" size="28.0" />
+                      </font>
+                      <VBox.margin>
+                          <Insets />
+                      </VBox.margin>
+                  </Label>
+              </children>
+         <VBox.margin>
+            <Insets left="30.0" top="30.0" />
+         </VBox.margin>
+          </VBox>
+    </children>
+</VBox>

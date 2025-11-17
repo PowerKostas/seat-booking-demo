@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="700" prefWidth="1200" style="-fx-background-color: #191919;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.HomeController">
+   <children>
+      <StackPane maxHeight="63.0" minHeight="63.0" style="-fx-background-color: #2D2D2D; -fx-border-color: transparent transparent #767676 transparent; -fx-border-width: 2;">
+         <children>
+             <Label text="CINEMA" textFill="#8c1d18" StackPane.alignment="CENTER">
+               <font>
+                  <Font name="Arial Black" size="32.0" />
+               </font>
+             </Label>
+             <Label onMouseClicked="#openMenu" onMouseEntered="#hand" onMouseExited="#mouse" text="⬅" textFill="#8c1d18" StackPane.alignment="CENTER_LEFT">
+                 <font>
+                     <Font size="32.0" />
+                 </font>
+                 <StackPane.margin>
+                     <Insets left="5.0" />
+                 </StackPane.margin>
+             </Label>
+            <VBox alignment="CENTER_RIGHT" maxWidth="-Infinity" StackPane.alignment="CENTER_RIGHT">
+               <children>
+                  <Label fx:id="usernameLabel" textFill="#8c1d18">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="logInLabel" onMouseClicked="#openLogIn" onMouseEntered="#hand" onMouseExited="#mouse" text="Σύνδεση" textFill="#8c1d18">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <StackPane.margin>
+                  <Insets right="5.0" />
+               </StackPane.margin>
+            </VBox>
+         </children>
+      </StackPane>
+      <StackPane>
+         <children>
+            <Label text="Ταινίες Σήμερα" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </StackPane>
+      <ScrollPane fx:id="moviesScrollPane" fitToHeight="true" hbarPolicy="ALWAYS" pannable="true" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+         <content>
+            <HBox spacing="15.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" onMouseEntered="#moviesEnter" onMouseExited="#moviesExit" spacing="10.0" style="-fx-border-color: transparent; -fx-border-width: 2;">
+                     <children>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/adventureCosmos.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="Adventure Cosmos" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="button1" mnemonicParsing="false" onMouseClicked="#openBooking" onMouseEntered="#buttonEnter" onMouseExited="#buttonExit" style="-fx-background-color: orange;" text="Αγορά Εισιτηρίων">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin></Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" onMouseEntered="#moviesEnter" onMouseExited="#moviesExit" spacing="10.0" style="-fx-border-color: transparent; -fx-border-width: 2;">
+                     <children>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/danceFloor.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="Dance Floor" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="button2" mnemonicParsing="false" onMouseClicked="#openBooking" onMouseEntered="#buttonEnter" onMouseExited="#buttonExit" style="-fx-background-color: orange;" text="Αγορά Εισιτηρίων">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin></Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" onMouseEntered="#moviesEnter" onMouseExited="#moviesExit" spacing="10.0" style="-fx-border-color: transparent; -fx-border-width: 2;">
+                     <children>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/desertMan.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="Desert Man" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="button3" mnemonicParsing="false" onMouseClicked="#openBooking" onMouseEntered="#buttonEnter" onMouseExited="#buttonExit" style="-fx-background-color: orange;" text="Αγορά Εισιτηρίων">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin></Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" onMouseEntered="#moviesEnter" onMouseExited="#moviesExit" spacing="10.0" style="-fx-border-color: transparent; -fx-border-width: 2;">
+                     <children>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/liveMusic.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="Live Music" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="button4" mnemonicParsing="false" onMouseClicked="#openBooking" onMouseEntered="#buttonEnter" onMouseExited="#buttonExit" style="-fx-background-color: orange;" text="Αγορά Εισιτηρίων">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin></Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" onMouseEntered="#moviesEnter" onMouseExited="#moviesExit" spacing="10.0" style="-fx-border-color: transparent; -fx-border-width: 2;">
+                     <children>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/threeFriends.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="Three Friends" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="button5" mnemonicParsing="false" onMouseClicked="#openBooking" onMouseEntered="#buttonEnter" onMouseExited="#buttonExit" style="-fx-background-color: orange;" text="Αγορά Εισιτηρίων">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin></Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" onMouseEntered="#moviesEnter" onMouseExited="#moviesExit" spacing="10.0" style="-fx-border-color: transparent; -fx-border-width: 2;">
+                     <children>
+                        <ImageView pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/filmNoir.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="Film Noir" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="button6" mnemonicParsing="false" onMouseClicked="#openBooking" onMouseEntered="#buttonEnter" onMouseExited="#buttonExit" style="-fx-background-color: orange;" text="Αγορά Εισιτηρίων">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin></Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </ScrollPane>
+   </children>
+</VBox>
