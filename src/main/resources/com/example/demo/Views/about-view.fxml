@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="700" prefWidth="1200" style="-fx-background-color: #191919;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.AboutController">
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="700" prefWidth="1200" style="-fx-background-color: #191919;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controllers.AboutController">
     <children>
         <StackPane maxHeight="63.0" minHeight="63.0" style="-fx-background-color: #2D2D2D; -fx-border-color: transparent transparent #767676 transparent; -fx-border-width: 2;">
             <children>
@@ -25,7 +24,7 @@
                 </Label>
             </children>
         </StackPane>
-        <VBox spacing="20.0" VBox.vgrow="ALWAYS">
+        <VBox alignment="CENTER_LEFT" spacing="20.0" VBox.vgrow="ALWAYS">
             <children>
                 <Label text="Γιατί δημιουργήθηκε:" textFill="#8c1d18">
                     <font>
@@ -53,7 +52,7 @@
                 </Label>
             </children>
             <VBox.margin>
-                <Insets left="30.0" top="30.0" />
+                <Insets left="30.0" right="30.0" />
             </VBox.margin>
         </VBox>
     </children>

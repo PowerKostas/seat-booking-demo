@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="700" prefWidth="1200" style="-fx-background-color: #191919;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.HomeController">
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="700" prefWidth="1200" style="-fx-background-color: #191919;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controllers.HomeController">
    <children>
       <StackPane maxHeight="63.0" minHeight="63.0" style="-fx-background-color: #2D2D2D; -fx-border-color: transparent transparent #767676 transparent; -fx-border-width: 2;">
          <children>

@@ -1,4 +1,4 @@
-package com.example.demo.controllers;
+package com.example.demo.Controllers;
 
 import javafx.scene.Cursor;
 import javafx.scene.control.Label;

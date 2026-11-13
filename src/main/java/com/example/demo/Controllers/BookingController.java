@@ -1,7 +1,6 @@
-package com.example.demo.controllers;
+package com.example.demo.Controllers;
 
 import javafx.fxml.FXML;
-import javafx.stage.*;
 import javafx.scene.*;
 import javafx.scene.layout.*;
 import javafx.scene.control.*;
